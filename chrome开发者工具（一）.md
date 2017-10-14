@@ -12,9 +12,7 @@
 
 * console.warn：警示信息
 
-* console.debug：用于输出调试信息
-
-![](/assets/console.png)
+* console.debug：用于输出调试信息![](/assets/开发者工具/consoles.png)
 
 如果再配合 **console.group**  与 **console.groupEnd**，可以将这种分类管理的思想发挥到极致。这适合于在开发一个规模很大模块很多很复杂的Web APP时，将各自的log信息分组到以各自命名空间为名称的组里面。
 
@@ -26,7 +24,7 @@ console.log('%chello world','font-size:36px;color:green;');
 
 输出结果：
 
-![](/assets/consoleLogStyle.png)
+![](/assets/开发者工具/import.png)
 
 在控制台上输出一个**图片**：
 
@@ -34,14 +32,18 @@ console.log('%chello world','font-size:36px;color:green;');
 console.log("%c", "padding:50px 300px;line-height:120px;background:url('http://wayou.github.io/2014/09/10/chrome-console-tips-and-tricks/rabbit.gif') no-repeat;");
 ```
 
-![](/assets/consoleLogImage.png)3、console.table：以**表格**的形式输出
+![](assets/开发者工具/consoleImage.png)
+
+3、console.table：以**表格**的形式输出
 
 ```
 var data = [{'书名': 'JavaScript高级程序设计', '数量': 1}, {'笔名': 'pencil', '数量': 3}];
 console.table(data);
 ```
 
-![](/assets/consoleTable.png)4、console.count：**计数**
+![](/assets/开发者工具/consoleTable.png)
+
+4、console.count：**计数**
 
 ```
 function foo(){
@@ -53,13 +55,17 @@ foo();
 foo();
 ```
 
-![](/assets/consoleCount.png)5、console.dir：将DOM节点以**JavaScript对象的形式**输出-- 而console.log 输出的是**html 结构**
+![](/assets/开发者工具/consoleCount.png)
+
+5、console.dir：将DOM节点以**JavaScript对象的形式**输出-- 而console.log 输出的是**html 结构**
 
 ```
 console.dir(document.body)
 ```
 
-![](/assets/consoleDir.png)6、console.time & console.timeEnd ： 测试一段代码**执行的时间**
+![](/assets/开发者工具/consoleDir.png)
+
+6、console.time & console.timeEnd ： 测试一段代码**执行的时间**
 
 ```
 console.time("Array initialize");
@@ -69,6 +75,8 @@ for (var i = array.length - 1; i >= 0; i--) {
 };
 console.timeEnd("Array initialize");
 ```
+
+![](/assets/开发者工具/consoleTime.png)
 
 7、console.timeline  &  console.timelineEnd : 记录一段时间轴
 
@@ -83,9 +91,11 @@ for (var i = array.length - 1; i >= 0; i--) {
 console.profileEnd ("Array initialize");
 ```
 
-![](/assets/consoleProfile.png)
+![](/assets/开发者工具/consoleProfile.png)
 
 在控制台上调试profiles
 
-![](/assets/consoleProfiles.png)三种显示性能的调试方法参考：[http://www.h3399.cn/201610/8494.html](http://www.h3399.cn/201610/8494.html)
+![](/assets/开发者工具/profileIntro.png)
+
+三种显示性能的调试方法参考：[http://www.h3399.cn/201610/8494.html](http://www.h3399.cn/201610/8494.html)
 
