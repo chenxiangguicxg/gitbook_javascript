@@ -40,7 +40,9 @@
 
 ![](/assets/开发者工具/shortcutKey7.png)9、选择下一个匹配项
 
-        在 source 文件：**Ctrl + D**
+```
+    在 source 文件：**Ctrl + D**
+```
 
 10、强制改变元素的状态
 
@@ -54,9 +56,11 @@ DevTools有个可以模拟CSS状态的功能，例如元素的hover和focus,可�
 
 12、直接编辑页面
 
-     在console 中输入下列命令：**document.designMode = "on"**;
+```
+ 在console 中输入下列命令：document.designMode = "on";
+```
 
-13、使用** inspect（elem）**跳转到 elements 指定的元素节点
+13、使用** inspect（elem）**跳转到 elements 指定的元素节点
 
 14、使用 **value（object）**获取对象的所有属性，返回数组
 
@@ -72,11 +76,10 @@ DevTools有个可以模拟CSS状态的功能，例如元素的hover和focus,可�
 
 20、数值调整快捷键
 
-**- Up / Down，增加或减少 1 单位**
+**- Up / Down，增加或减少 1 单位**
 
-**- Shift + Up / Down，增加或减少 10 单位**
+**- Shift + Up / Down，增加或减少 10 单位**
 
-**- Alt + Up / Down，增加或减少 0.1 单位**
-
-
+**- Alt + Up / Down，增加或减少 0.1 单位  
+**
 
