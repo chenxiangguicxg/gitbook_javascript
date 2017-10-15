@@ -34,7 +34,9 @@
 
 7、保存记录（勾选在Console标签下的保存记录选项（**Preserve log**），你可以使DevTools的console继续保存记录而不会在每个页面加载之后清除记录。当你想要研究在页面还没加载完之前出现的bug时，这会是一个很方便的方法。）![](/assets/开发者工具/shortcutKey6.png)8、优质打印（或者叫做代码格式化：将页面引入的压缩过的代码解压出来）
 
-        Chrome’s Developer Tools有内建的美化代码，可以返回一段最小化且格式易读的代码。Pretty Print的按钮在Sources标签的左下角（左下角有一个“{}”的符号）。
+```
+    Chrome’s Developer Tools有内建的美化代码，可以返回一段最小化且格式易读的代码。Pretty Print的按钮在Sources标签的左下角（左下角有一个“{}”的符号）。
+```
 
 ![](/assets/开发者工具/shortcutKey7.png)9、选择下一个匹配项
 
@@ -78,7 +80,7 @@ DevTools有个可以模拟CSS状态的功能，例如元素的hover和focus,可�
 
 **- Shift + Up / Down，增加或减少 10 单位**
 
-**- Alt + Up / Down，增加或减少 0.1 单位          
+**- Alt + Up / Down，增加或减少 0.1 单位            
 **21、使用 **Ctrl + \[ 或者 \]** 可以循环切换开发者工具的各个面板
 
 22、使用** console.trace\(\)** 可以追踪代码执行过程中的栈信息
@@ -91,9 +93,9 @@ DevTools有个可以模拟CSS状态的功能，例如元素的hover和focus,可�
 
 26、可视化DOM阴影
 
-        Web浏览器在构建如文本框、按钮和输入框一类元素时，其它基本元素的视图是隐藏的。不过，你可以在Settings - &gt;  General 中切换成Show user agent shadow DOM，这样就会在元素标签页中显示被隐藏的代码。甚至还能单独设计他们的样式，这给你了很大的控制权。
-
-
+```
+    Web浏览器在构建如文本框、按钮和输入框一类元素时，其它基本元素的视图是隐藏的。不过，你可以在Settings - &gt;  General 中切换成Show user agent shadow DOM，这样就会在元素标签页中显示被隐藏的代码。甚至还能单独设计他们的样式，这给你了很大的控制权。
+```
 
 
 
