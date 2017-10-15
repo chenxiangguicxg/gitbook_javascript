@@ -10,11 +10,11 @@
 
 3、**Ctrl + g：**快速跳转到指定行
 
-![](/assets/开发者工具/shortcutKey3.png)
+1. ![](/assets/开发者工具/shortcutKey3.png)
 
 4、**Ctrl + o **：输入“？”，选择相应的操作
 
-![](/assets/开发者工具/shortcutKey4.png)
+1. ![](/assets/开发者工具/shortcutKey4.png)
 
 5、在控制台选择元素
 
@@ -40,23 +40,43 @@
 
 ![](/assets/开发者工具/shortcutKey7.png)9、选择下一个匹配项
 
-     在 source 文件中： **Ctrl + D**
+        在 source 文件：**Ctrl + D**
 
 10、强制改变元素的状态
 
-     DevTools有个可以模拟CSS状态的功能，例如元素的hover和focus,可以很容易改变元素样式。在CSS编辑器中可以利用这个功能
+DevTools有个可以模拟CSS状态的功能，例如元素的hover和focus,可以很容易改变元素样式。在CSS编辑器中可以利用这个功能
 
-    ![](/assets/开发者工具/shortcutKey8.png)
+![](assets/开发者工具/shortcutKey8.png)
 
 11、改变颜色格式
 
-     **在颜色预览功能使用快捷键Shift + 点击，可以在rgba、hsl和hexadecimal来回切换颜色的格式**
+在颜色预览功能使用快捷键**Shift + **点击，可以在rgba、hsl 和 hexadecimal 来回切换颜色的格式
 
-12、
+12、直接编辑页面
 
+     在console 中输入下列命令：**document.designMode = "on"**;
 
+13、使用** inspect（elem）**跳转到 elements 指定的元素节点
 
+14、使用 **value（object）**获取对象的所有属性，返回数组
 
+15、在source 面板中的 js 文件中使用 **alt + - 和 alt + =** 可以在上一个鼠标位置和下一个鼠标位置进行跳转
+
+16、在 elements 面板上 对预览的图片右击 open ，在预览的图片右键选择 **copy image as data URI** ，可以将图片转为base64 编码
+
+17、使用 **Ctrl + click** 可以创建多个编辑点，使用 **Ctrl + u** 可以取消最后一处编辑点
+
+18、按住 alt 键，可以在文件中创建一个矩形选区
+
+19、在 Elements 面板右侧的 Event Listeners 选项卡中，在绑定的事件上右键可以跳转到相应的 JS 代码
+
+20、数值调整快捷键
+
+**- Up / Down，增加或减少 1 单位**
+
+**- Shift + Up / Down，增加或减少 10 单位**
+
+**- Alt + Up / Down，增加或减少 0.1 单位**
 
 
 
