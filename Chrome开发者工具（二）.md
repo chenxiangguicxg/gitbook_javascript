@@ -2,7 +2,7 @@
 
 上一章了解了console 的在控制台中的使用方法，本文来介绍一下开发者工具的快捷键的使用。
 
-1、**Ctrl + p**：快速切换文件（在DevpTools 可以快速搜索和打开你项目中的文件）
+1. **Ctrl + p**：快速切换文件（在DevpTools 可以快速搜索和打开你项目中的文件）
 
 ![](assets/开发者工具/shortcutKey1.png)
 
@@ -38,5 +38,25 @@
  Chrome’s Developer Tools有内建的美化代码，可以返回一段最小化且格式易读的代码。Pretty Print的按钮在Sources标签的左下角**（左下角有一个“{}”的符号）**。
 ```
 
-![](/assets/开发者工具/shortcutKey7.png)
+![](/assets/开发者工具/shortcutKey7.png)9、选择下一个匹配项
+
+     在 source 文件中： **Ctrl + D**
+
+10、强制改变元素的状态
+
+     DevTools有个可以模拟CSS状态的功能，例如元素的hover和focus,可以很容易改变元素样式。在CSS编辑器中可以利用这个功能
+
+    ![](/assets/开发者工具/shortcutKey8.png)
+
+11、改变颜色格式
+
+     **在颜色预览功能使用快捷键Shift + 点击，可以在rgba、hsl和hexadecimal来回切换颜色的格式**
+
+12、
+
+
+
+
+
+
 
