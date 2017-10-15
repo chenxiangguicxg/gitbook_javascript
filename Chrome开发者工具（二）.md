@@ -80,7 +80,7 @@ DevTools有个可以模拟CSS状态的功能，例如元素的hover和focus,可�
 
 **- Shift + Up / Down，增加或减少 10 单位**
 
-**- Alt + Up / Down，增加或减少 0.1 单位      
+**- Alt + Up / Down，增加或减少 0.1 单位        
 **21、使用 **Ctrl + \[ 或者 \]** 可以循环切换开发者工具的各个面板
 
 22、使用 console.trace\(\) 可以追踪代码执行过程中的栈信息
@@ -90,4 +90,10 @@ DevTools有个可以模拟CSS状态的功能，例如元素的hover和focus,可�
 24、**Ctrl + Shift + I**  ： 打开开发者工具窗口
 
 25、**Ctrl + Shift + C**： 可以直接把鼠标发在页面上看具体的元素节点
+
+26、可视化DOM阴影
+
+     Web浏览器在构建如文本框、按钮和输入框一类元素时，其它基本元素的视图是隐藏的。不过，你可以在Settings -&gt; General 中切换成Show user agent shadow DOM，这样就会在元素标签页中显示被隐藏的代码。甚至还能单独设计他们的样式，这给你了很大的控制权。
+
+
 
