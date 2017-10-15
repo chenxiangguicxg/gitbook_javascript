@@ -18,11 +18,11 @@
 
 5、在控制台选择元素
 
-* $\(\)–document.querySelector\(\)简写，返回第一个和css选择器匹配的元素。例如$\(‘div’\)返回这个页面中第一个div元素
+* **$\(\)**–document.querySelector\(\)简写，返回第一个和css选择器匹配的元素。例如$\(‘div’\)返回这个页面中第一个div元素
 
-* $$\(\)–document.querySelectorAll\(\)的简写，返回一个和css选择器匹配的元素数组。
+* **$$\(\)**–document.querySelectorAll\(\)的简写，返回一个和css选择器匹配的元素数组。
 
-* $0-$4–依次返回五个最近你在元素面板选择过的DOM元素的历史记录，$0是最新的记录，以此类推。
+* **$0-$4**–依次返回五个最近你在元素面板选择过的DOM元素的历史记录，$0是最新的记录，以此类推。
 
 ![](/assets/开发者工具/shortcutKey5.png)
 
@@ -80,7 +80,7 @@ DevTools有个可以模拟CSS状态的功能，例如元素的hover和focus,可�
 
 **- Shift + Up / Down，增加或减少 10 单位**
 
-**- Alt + Up / Down，增加或减少 0.1 单位              
+**- Alt + Up / Down，增加或减少 0.1 单位                
 **21、使用 **Ctrl + \[ 或者 \]** 可以循环切换开发者工具的各个面板
 
 22、使用** console.trace\(\)** 可以追踪代码执行过程中的栈信息
@@ -90,8 +90,4 @@ DevTools有个可以模拟CSS状态的功能，例如元素的hover和focus,可�
 24、**Ctrl + Shift + I**  ： 打开开发者工具窗口
 
 25、**Ctrl + Shift + C**： 可以直接把鼠标发在页面上看具体的元素节点
-
-
-
-
 
