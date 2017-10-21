@@ -142,21 +142,10 @@ fetch(myRequest).then(function(response) {
 
 这里需要借助 [Request\(\)](https://developer.mozilla.org/en-US/docs/Web/API/Request/Request) 方法才能自定义请求对象。
 
+## 参考
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+* [fetch API  mdn](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
+* [fetch example](https://github.com/mdn/fetch-examples/)
 
 
 
