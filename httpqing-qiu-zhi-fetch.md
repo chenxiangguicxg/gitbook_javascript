@@ -21,29 +21,16 @@ var xhttp = new XMLHttpRequest();
 
 正如很多前端框架的流行（react.js、vue.js 和 angular.js），都是在底层对 XMLHttpRequest 进行封装，像jQuery 使用$.ajax 一样，直接提供简单的方式即可实现ajax 请求，那么fetch 实现的原理，其实直接将$.ajax、$http 等这些方法直接进一步封装，直接让浏览器直接调用。
 
+## 与 jQuery.ajax 的不同
+
+* fetch 在服务器不会对 404 和 500 抛出错误，而是手动通过 ok 字段和 status 字段进行调试判断
+* 默认情况下，fetch 并不会向服务器发送或接受cookie，必须在 **Header** 参数上加 **credentials: ‘include’ **配置
+
 ## 如何使用 fetch？
 
 因为是新兴的API，在使用fetch 时，我们有必要了解一下 fetch **兼容性**，如下图：![](/assets/fetch.png)如何处理这里的兼容问题呢？
 
 我们需要借助 [Fetch polyfill](https://github.com/github/fetch) 来实现 fetch 功能。
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
