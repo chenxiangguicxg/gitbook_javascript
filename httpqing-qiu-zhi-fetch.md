@@ -19,7 +19,7 @@ var xhttp = new XMLHttpRequest();
 
 看了上面的代码是不是感觉很麻烦？
 
-正如很多前端框架的流行（react.js、vue.js 和 angular.js），都是在底层对 XMLHttpRequest 进行封装，像jQuery 使用$.ajax 一样，直接提供简单的方式即可实现ajax 请求，那么fetch 实现的原理，其实直接将$.ajax、$http 等这些方法直接进一步封装，直接让浏览器直接调用。
+正如很多前端框架的流行（react.js、vue.js 和 angular.js），都是在底层对 XMLHttpRequest 进行封装，像jQuery 使用$.ajax 一样，直接提供简单的方式即可实现ajax 请求，那么fetch 实现的原理，其实直接将$.ajax、$http 等这些方法直接进一步封装，直接让浏览器直接调用，且 fetch 是基于 [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) 实现的。
 
 ## 与 jQuery.ajax 的不同
 
@@ -32,11 +32,115 @@ var xhttp = new XMLHttpRequest();
 
 我们需要借助 [Fetch polyfill](https://github.com/github/fetch) 来实现 fetch 功能。
 
+## fetch 接口
 
+* [Body](https://developer.mozilla.org/en-US/docs/Web/API/Body)
+* [Header](https://developer.mozilla.org/en-US/docs/Web/API/Headers)
+* [Request](https://developer.mozilla.org/en-US/docs/Web/API/Request)
+* [Response](https://developer.mozilla.org/en-US/docs/Web/API/Response)
 
+## 使用方法
 
+### 创建请求
 
+```
+var myImage = document.querySelector('img');
 
+fetch('flowers.jpg').then(function(response) {
+  return response.blob();
+}).then(function(myBlob) {
+  var objectURL = URL.createObjectURL(myBlob);
+  myImage.src = objectURL;
+});
+```
+
+上面代码是请求一个图片然后对图片在做处理，此处形成实体的图片需要借助 [blob\(\)](https://developer.mozilla.org/en-US/docs/Web/API/Body/blob) 方法，由[ Blob ](/objectURL)实例创建objectURL 然后将其插入img 标签中。
+
+### 设置请求选项
+
+```
+var myHeaders = new Headers();
+
+var myInit = { method: 'GET',
+               headers: myHeaders,
+               mode: 'cors',
+               cache: 'default' };
+
+fetch('flowers.jpg', myInit).then(function(response) {
+  return response.blob();
+}).then(function(myBlob) {
+  var objectURL = URL.createObjectURL(myBlob);
+  myImage.src = objectURL;
+});
+```
+
+fetch\(\) 方法的第二个参数是初始化的请求选项，可以通过一个 myInit 对象根据需求设置。[所有选项参数入口](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch)。
+
+### 发送带有认证（credentials）的请求
+
+#### 跨资源请求
+
+```
+fetch('https://example.com', {
+  credentials: 'include'  
+})
+```
+
+#### 同源请求
+
+```
+// The calling script is on the origin 'https://example.com'
+
+fetch('https://example.com', {
+  credentials: 'same-origin'  
+})
+```
+
+#### 不带认证的请求
+
+```
+fetch('https://example.com', {
+  credentials: 'omit'  
+})
+```
+
+### 检查请求是否成功
+
+```
+fetch('flowers.jpg').then(function(response) {
+  if(response.ok) {
+    return response.blob();
+  }
+  throw new Error('Network response was not ok.');
+}).then(function(myBlob) { 
+  var objectURL = URL.createObjectURL(myBlob); 
+  myImage.src = objectURL; 
+}).catch(function(error) {
+  console.log('There has been a problem with your fetch operation: ' + error.message);
+});
+```
+
+### 自定义请求对象
+
+```
+var myHeaders = new Headers();
+
+var myInit = { method: 'GET',
+               headers: myHeaders,
+               mode: 'cors',
+               cache: 'default' };
+
+var myRequest = new Request('flowers.jpg', myInit);
+
+fetch(myRequest).then(function(response) {
+  return response.blob();
+}).then(function(myBlob) {
+  var objectURL = URL.createObjectURL(myBlob);
+  myImage.src = objectURL;
+});
+```
+
+这里需要借助 [Request\(\)](https://developer.mozilla.org/en-US/docs/Web/API/Request/Request) 方法才能自定义请求对象。
 
 
 
