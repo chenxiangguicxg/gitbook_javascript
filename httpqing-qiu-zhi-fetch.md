@@ -23,7 +23,7 @@ var xhttp = new XMLHttpRequest();
 
 ## 与 jQuery.ajax 的不同
 
-* fetch 在服务器不会对 404 和 500 抛出错误，而是手动通过 ok 字段和 status 字段进行调试判断
+* fetch 在服务器不会对 404 和 500 抛出错误，而是要手动通过 ok 字段和 status 字段进行调试判断
 * 默认情况下，fetch 并不会向服务器发送或接受cookie，必须在 **Header** 参数上加 **credentials: ‘include’ **配置
 
 ## 如何使用 fetch？
@@ -146,10 +146,6 @@ fetch(myRequest).then(function(response) {
 
 * [fetch API  mdn](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
 * [fetch example](https://github.com/mdn/fetch-examples/)
-
-
-
-
 
 
 
