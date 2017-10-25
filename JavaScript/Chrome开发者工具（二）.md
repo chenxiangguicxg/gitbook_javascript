@@ -4,9 +4,9 @@
 
 1. **Ctrl + p**：快速切换文件（在DevpTools 可以快速搜索和打开你项目中的文件）
 
-![](assets/开发者工具/shortcutKey1.png)
+![](/assets/开发者工具/shortcutKey1.png)
 
-2、**Ctrl + shift + f**：在源代码中搜索（搜索源代码的字符中特定串）![](assets/开发者工具/shortcutKey2.png)
+2、**Ctrl + shift + f**：在源代码中搜索（搜索源代码的字符中特定串）![](/assets/开发者工具/shortcutKey2.png)
 
 3、**Ctrl + g：**快速跳转到指定行
 
@@ -48,7 +48,7 @@
 
 DevTools有个可以模拟CSS状态的功能，例如元素的hover和focus,可以很容易改变元素样式。在CSS编辑器中可以利用这个功能
 
-![](assets/开发者工具/shortcutKey8.png)
+![](/assets/开发者工具/shortcutKey8.png)
 
 11、改变颜色格式
 
@@ -80,7 +80,7 @@ DevTools有个可以模拟CSS状态的功能，例如元素的hover和focus,可�
 
 **- Shift + Up / Down，增加或减少 10 单位**
 
-**- Alt + Up / Down，增加或减少 0.1 单位                
+**- Alt + Up / Down，增加或减少 0.1 单位                  
 **21、使用 **Ctrl + \[ 或者 \]** 可以循环切换开发者工具的各个面板
 
 22、使用** console.trace\(\)** 可以追踪代码执行过程中的栈信息
