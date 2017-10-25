@@ -32,7 +32,7 @@ console.log('%chello world','font-size:36px;color:green;');
 console.log("%c", "padding:50px 300px;line-height:120px;background:url('http://wayou.github.io/2014/09/10/chrome-console-tips-and-tricks/rabbit.gif') no-repeat;");
 ```
 
-![](assets/开发者工具/consoleImage.png)
+![](/assets/开发者工具/consoleImage.png)
 
 3、console.table：以**表格**的形式输出
 
