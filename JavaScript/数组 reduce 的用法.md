@@ -146,5 +146,5 @@ var allbooks = friends.reduce(function(prev, curr) {
 
 **与 reduce 类似的方法 是 reduceRight**
 
-两者的区别是：迭代的方向不同，前者方向是从左至右，后者是从右至左。
+两者的区别是：迭代的方向不同，前者方向是**从左至右**，后者是**从右至左**。
 
